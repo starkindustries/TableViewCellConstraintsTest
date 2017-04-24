@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MyCell" rowHeight="128" id="OqZ-Iy-9cU">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="128"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="OqZ-Iy-9cU" id="byF-VE-xOs">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="128"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9wd-pW-4nn" userLabel="Profile Image">
+                        <rect key="frame" x="10" y="28" width="75" height="75"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="9wd-pW-4nn" secondAttribute="height" multiplier="1:1" id="IOk-Wb-ebE"/>
+                            <constraint firstAttribute="height" constant="75" id="zit-Ge-PdM"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CAT-yx-Ikw" userLabel="Username">
+                        <rect key="frame" x="100" y="28" width="257" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="agN-oQ-Cs0"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Content Text View" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eA8-Dl-CNN" userLabel="Content">
+                        <rect key="frame" x="100" y="53" width="257" height="46.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottomMargin" secondItem="9wd-pW-4nn" secondAttribute="bottom" constant="188.5" id="3B1-8m-oUj"/>
+                    <constraint firstItem="eA8-Dl-CNN" firstAttribute="top" secondItem="CAT-yx-Ikw" secondAttribute="bottom" constant="5" id="6ua-ya-89P"/>
+                    <constraint firstItem="CAT-yx-Ikw" firstAttribute="top" secondItem="byF-VE-xOs" secondAttribute="topMargin" constant="20" id="9mW-uy-Rih"/>
+                    <constraint firstItem="CAT-yx-Ikw" firstAttribute="top" secondItem="9wd-pW-4nn" secondAttribute="top" id="ATP-eS-EIn"/>
+                    <constraint firstItem="CAT-yx-Ikw" firstAttribute="leading" secondItem="eA8-Dl-CNN" secondAttribute="leading" id="DkC-3Y-piW"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="9wd-pW-4nn" secondAttribute="bottom" constant="17" id="Equ-sH-rJQ"/>
+                    <constraint firstItem="eA8-Dl-CNN" firstAttribute="leading" secondItem="byF-VE-xOs" secondAttribute="leadingMargin" constant="92" id="JiI-MM-oKB"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="eA8-Dl-CNN" secondAttribute="bottom" constant="20" id="QDY-fg-HS0"/>
+                    <constraint firstItem="CAT-yx-Ikw" firstAttribute="leading" secondItem="9wd-pW-4nn" secondAttribute="trailing" constant="15" id="Vf6-lS-qju"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="CAT-yx-Ikw" secondAttribute="trailing" constant="10" id="XYl-hY-Lgy"/>
+                    <constraint firstItem="9wd-pW-4nn" firstAttribute="leading" secondItem="byF-VE-xOs" secondAttribute="leadingMargin" constant="2" id="bFV-JP-G7X"/>
+                    <constraint firstItem="9wd-pW-4nn" firstAttribute="top" secondItem="byF-VE-xOs" secondAttribute="topMargin" constant="20" id="eFJ-mI-hbI"/>
+                    <constraint firstItem="CAT-yx-Ikw" firstAttribute="trailing" secondItem="eA8-Dl-CNN" secondAttribute="trailing" id="esQ-d5-lbQ"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="3B1-8m-oUj"/>
+                        <exclude reference="9mW-uy-Rih"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="16.5" y="0.0"/>
+        </tableViewCell>
+    </objects>
+</document>
