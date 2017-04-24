@@ -13,6 +13,7 @@
 		234690FB1EAD740E00EDB734 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 234690F91EAD740E00EDB734 /* LaunchScreen.storyboard */; };
 		234691031EAD746C00EDB734 /* MyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234691021EAD746C00EDB734 /* MyTableViewController.swift */; };
 		234691051EAD74F200EDB734 /* MyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 234691041EAD74F200EDB734 /* MyCell.xib */; };
+		23778D7A1EAE0D6700900F0F /* MyCopyPasteTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23778D781EAE0D6700900F0F /* MyCopyPasteTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		234690FC1EAD740E00EDB734 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		234691021EAD746C00EDB734 /* MyTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTableViewController.swift; sourceTree = "<group>"; };
 		234691041EAD74F200EDB734 /* MyCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyCell.xib; sourceTree = "<group>"; };
+		23778D781EAE0D6700900F0F /* MyCopyPasteTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyCopyPasteTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			children = (
 				234690F01EAD740E00EDB734 /* AppDelegate.swift */,
 				234690F41EAD740E00EDB734 /* Main.storyboard */,
+				23778D781EAE0D6700900F0F /* MyCopyPasteTableViewCell.xib */,
 				234691041EAD74F200EDB734 /* MyCell.xib */,
 				234691021EAD746C00EDB734 /* MyTableViewController.swift */,
 				234690F71EAD740E00EDB734 /* Assets.xcassets */,
@@ -130,6 +133,7 @@
 				234690FB1EAD740E00EDB734 /* LaunchScreen.storyboard in Resources */,
 				234691051EAD74F200EDB734 /* MyCell.xib in Resources */,
 				234690F81EAD740E00EDB734 /* Assets.xcassets in Resources */,
+				23778D7A1EAE0D6700900F0F /* MyCopyPasteTableViewCell.xib in Resources */,
 				234690F61EAD740E00EDB734 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -308,6 +312,7 @@
 				234691011EAD740E00EDB734 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

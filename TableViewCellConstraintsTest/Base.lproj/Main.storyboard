@@ -6,6 +6,8 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -17,6 +19,49 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MyPrototypeCell" rowHeight="80" id="FNk-SK-pJL">
+                                <rect key="frame" x="0.0" y="28" width="375" height="80"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="FNk-SK-pJL" id="YDo-a1-xAe">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sig-zZ-qvT">
+                                            <rect key="frame" x="28" y="11.5" width="55" height="55"/>
+                                            <color key="backgroundColor" red="1" green="0.79607843140000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="sig-zZ-qvT" secondAttribute="height" multiplier="1:1" id="GfP-zH-BMT"/>
+                                                <constraint firstAttribute="width" constant="55" id="WGG-zZ-bPp"/>
+                                            </constraints>
+                                        </view>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Top Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fNh-CV-8kk">
+                                            <rect key="frame" x="106" y="11" width="247" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bottom Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dMf-ca-H9n">
+                                            <rect key="frame" x="106" y="40" width="247" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="sig-zZ-qvT" firstAttribute="leading" secondItem="YDo-a1-xAe" secondAttribute="leadingMargin" constant="20" id="4rt-dT-dyw"/>
+                                        <constraint firstItem="fNh-CV-8kk" firstAttribute="leading" secondItem="sig-zZ-qvT" secondAttribute="trailing" constant="23" id="CUF-1N-yNE"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="sig-zZ-qvT" secondAttribute="bottom" constant="5.5" id="D9Y-Ft-Sdd"/>
+                                        <constraint firstItem="sig-zZ-qvT" firstAttribute="top" secondItem="YDo-a1-xAe" secondAttribute="topMargin" constant="3.5" id="EDF-dL-7xl"/>
+                                        <constraint firstItem="dMf-ca-H9n" firstAttribute="top" secondItem="fNh-CV-8kk" secondAttribute="bottom" constant="8" id="Kap-hy-Xxs"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="fNh-CV-8kk" secondAttribute="trailing" constant="14" id="cdC-V4-DEk"/>
+                                        <constraint firstItem="dMf-ca-H9n" firstAttribute="trailing" secondItem="fNh-CV-8kk" secondAttribute="trailing" id="eU3-uG-Wdp"/>
+                                        <constraint firstItem="fNh-CV-8kk" firstAttribute="top" secondItem="sig-zZ-qvT" secondAttribute="top" id="mVb-g1-OU9"/>
+                                        <constraint firstItem="dMf-ca-H9n" firstAttribute="leading" secondItem="fNh-CV-8kk" secondAttribute="leading" id="mk5-pE-EnL"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
                         <connections>
                             <outlet property="dataSource" destination="oUo-Hv-pNL" id="ovj-27-oZ1"/>
                             <outlet property="delegate" destination="oUo-Hv-pNL" id="AfB-Ua-0b8"/>

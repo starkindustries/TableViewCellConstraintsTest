@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MyCopyPasteTableViewCell" rowHeight="80" id="TQm-fS-5NW">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="TQm-fS-5NW" id="WsD-o8-jzF">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lci-bQ-nOh">
+                        <rect key="frame" x="28" y="11.5" width="55" height="55"/>
+                        <color key="backgroundColor" red="1" green="0.79607843140000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="55" id="72i-Yh-Fjc"/>
+                            <constraint firstAttribute="width" secondItem="lci-bQ-nOh" secondAttribute="height" multiplier="1:1" id="SbB-5a-VAs"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Top Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PdU-j2-70F">
+                        <rect key="frame" x="106" y="11" width="247" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bottom Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lPy-EL-HyG">
+                        <rect key="frame" x="106" y="40" width="247" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="lPy-EL-HyG" firstAttribute="top" secondItem="PdU-j2-70F" secondAttribute="bottom" constant="8" id="48h-fM-Ubw"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="PdU-j2-70F" secondAttribute="trailing" constant="14" id="70E-WF-q4W"/>
+                    <constraint firstItem="lci-bQ-nOh" firstAttribute="leading" secondItem="WsD-o8-jzF" secondAttribute="leadingMargin" constant="20" id="Dzz-Nv-vLD"/>
+                    <constraint firstItem="PdU-j2-70F" firstAttribute="leading" secondItem="lci-bQ-nOh" secondAttribute="trailing" constant="23" id="Reo-pV-lj8"/>
+                    <constraint firstItem="PdU-j2-70F" firstAttribute="top" secondItem="lci-bQ-nOh" secondAttribute="top" id="SHR-Qm-kr8"/>
+                    <constraint firstItem="lPy-EL-HyG" firstAttribute="trailing" secondItem="PdU-j2-70F" secondAttribute="trailing" id="YdK-np-6zD"/>
+                    <constraint firstItem="lPy-EL-HyG" firstAttribute="leading" secondItem="PdU-j2-70F" secondAttribute="leading" id="bQT-KM-pSs"/>
+                    <constraint firstItem="lci-bQ-nOh" firstAttribute="top" secondItem="WsD-o8-jzF" secondAttribute="topMargin" constant="3.5" id="gYK-yw-rfy"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="lci-bQ-nOh" secondAttribute="bottom" constant="5.5" id="pkx-c6-82X"/>
+                </constraints>
+            </tableViewCellContentView>
+        </tableViewCell>
+    </objects>
+</document>
